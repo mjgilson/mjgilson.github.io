@@ -4,7 +4,9 @@ const PRECACHE_ASSETS = [
     'assets/',
     'css/',
     'fonts/',
-    'js/'
+    'js/',
+    'browserconfig.xml',
+    'manifest.json'
 ]
 
 self.addEventListener('install', event => {
