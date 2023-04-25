@@ -2,7 +2,7 @@
     "name": "Octavia Hill Mural",
     "short_name": "OH Mural",
     "description": "Learn more about the Octavia Hill mural at the Octavia Hill Birthplace Trust",
-    "start_url": "https://mjgilson.github.io",
+    "start_url": "index.html",
     "icons": [
         {
             "src": "assets/icons/android-chrome-192x192.png",
