@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: local("../fonts/MerriweatherSans-VariableFont_wght.ttf"), url("../fonts/MerriweatherSans-VariableFont_wght.ttf");
+}
+
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  margin: 0%;
+  background-color: #373737;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+
+#muralImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+}
+
+#svgMap {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+}
+
+rect,
+path {
+  /* svg map areas */
+  cursor: pointer;
+  opacity: 0;
+}
+
+.modalElement {
+  /* both modal backgrounds */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modalContent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fefefe;
+  margin-left: 10%;
+  margin-top: 10vh;
+  padding: 0;
+  border: none;
+  width: 80%;
+  height: 80vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  overflow: hidden;
+  border-radius: 0.5em;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+#imageModalImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fefefe;
+  margin: 0;
+  padding: 0;
+  border: none;
+  object-fit: contain;
+  height: 100vh;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animateimage;
+  -webkit-animation-duration: 0.7s;
+  animation-name: animateimage;
+  animation-duration: 0.7s;
+  overflow: hidden;
+  background-color: black;
+}
+
+@-webkit-keyframes animateimage {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animateimage {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#modalPrevious {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  margin: 10vh 0;
+  padding: 25vh 0;
+  width: 10%;
+  height: 80vh;
+  cursor: pointer;
+}
+
+#modalNext {
+  position: fixed;
+  top: 0;
+  left: 90%;
+  margin: 10vh 0;
+  padding: 25vh 0;
+  width: 10%;
+  height: 60vh;
+  cursor: pointer;
+}
+
+.modalArrow {
+  cursor: pointer;
+  margin: 15%;
+}
+
+#modalHeader {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 100;
+  padding: 2px 16px;
+  background-color: #188318;
+  color: white;
+}
+
+#modalAudioIcon {
+  height: 3.25em;
+  float: left;
+  margin-top: 0.5em;
+  margin-right: 1.5em;
+  cursor: pointer;
+}
+
+#modalClose {
+  color: white;
+  float: right;
+  font-size: 3.75em;
+  font-weight: bold;
+}
+
+#modalClose:hover,
+#modalClose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modalBody {
+  padding: 0;
+}
+
+#modalBodyImage {
+  position: relative;
+  object-fit: contain;
+  width: 50%;
+  height: 60vh;
+  text-align: left;
+  float: left;
+  margin-right: 2em;
+  margin: 0 1em 1em 1em;
+}
+
+#modalBodyTextWrapper {
+  overflow: hidden;
+  height: 100%;
+}
+
+#modalBodyText {
+  font-family: 'Merriweather Sans', sans-serif;
+  word-spacing: 0.1em;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1.4em;
+  padding: 0 0 0 2vw;
+}
